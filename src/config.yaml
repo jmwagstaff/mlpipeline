@@ -1,0 +1,5 @@
+pipeline_steps:
+  - get_dataset
+  - get_model
+  - train:get_dataset:get_model
+  - test:train
